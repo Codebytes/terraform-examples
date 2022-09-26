@@ -9,7 +9,7 @@ variable "rg_name" {
 
 variable "vm_suffix" {
   type    = string
-  default = "cayers"
+  default = "clayers"
 }
 
 variable "vm_admin_user" {

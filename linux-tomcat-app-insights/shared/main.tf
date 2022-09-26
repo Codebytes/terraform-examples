@@ -23,7 +23,7 @@ resource "azurerm_storage_account" "tomcat" {
 }
 
 resource "azurerm_monitor_action_group" "tomcat" {
-  name                = var.action_group_name
+  name                = "${var.action_group_name}-${var.suffix}"
   resource_group_name = var.rg_name
   short_name          = "action"
 }

@@ -19,3 +19,9 @@ module "vm" {
   rg_name                  = azurerm_resource_group.vm_rg.name
   app_insights_conn_string = module.shared.app_insights_conn_string
 }
+
+
+module "db" {
+  source  = "./db"
+  rg_name = azurerm_resource_group.shared_rg.name
+}
